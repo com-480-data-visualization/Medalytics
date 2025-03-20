@@ -2,7 +2,7 @@
 **École Polytechnique Fédérale de Lausanne (EPFL)**  
 **Authors:** Albert Fares, Hugo Jeannin, Daniel Polka  
 
-![EPFL Logo](images/logo-epfl.png)
+![EPFL Logo](res/logo-epfl.png)
 
 ## Medalytics, a data-driven exploration of the Olympic Games
 
@@ -51,13 +51,13 @@ To help visualize the data at this stage, we plotted three graphs using *pandas*
 
 The first graph captures the evolution of the proportion of men to women over the years (blue line), with the bars representing the absolute number of men and women athletes.
 
-![Evolution of the proportion of men to women](images/output.png)
+![Evolution of the proportion of men to women](res/mf_prop_ev.png)
 
 The second and third graphs represent the total number of athletes and medals (cumulated over the years), respectively per country and per US athletes' birthplace. The countries and cities (top 20) are ranked by the `medals/num_athletes` ratio.
 
-![Number of athletes and medals per country](images/countries_ratio.png)
+![Number of athletes and medals per country](res/countries_ratio.png)
 
-![Number of athletes and medals per birthplace](images/us_birthpl_ratio.png)
+![Number of athletes and medals per birthplace](res/us_birthpl_ratio.png)
 
 ---
 
