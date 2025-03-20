@@ -2,7 +2,9 @@
 **École Polytechnique Fédérale de Lausanne (EPFL)**  
 **Authors:** Albert Fares, Hugo Jeannin, Daniel Polka  
 
+<div style="text-align: center;">
 <img src="res/logo-epfl.png" alt="EPFL Logo" width="200">
+</div>
 
 
 ## Medalytics, a data-driven exploration of the Olympic Games
