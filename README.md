@@ -1,6 +1,13 @@
+| Student's name | SCIPER |
+| -------------- | ------ |
+| Hugo Jeannin | 329220 |
+| Albert Fares | 341018 |
+| Daniel Polka | 326800 |
+
 # COM-480 - Data Visualization Milestone 1  
 **École Polytechnique Fédérale de Lausanne (EPFL)**  
 **Authors:** Albert Fares, Hugo Jeannin, Daniel Polka  
+
 
 <img src="res/logo-epfl.png" alt="EPFL Logo" width="200">
 
