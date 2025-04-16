@@ -95,7 +95,10 @@ We also aim to highlight emerging trends in Olympic sports by exploring the intr
 
 ## Milestone 2 – Development Progress
 
-> TODO
+You can find the full project goal description in the [Medalytics_M2.pdf](./Medalytics_M2.pdf) file located in the root directory of this repository.
+
+The current prototype of the Medalytics website is available at:  
+🌐 [www.medalytics.ch](https://www.medalytics.ch)
 
 ---
 
