@@ -4,19 +4,29 @@
 | Albert Fares | 341018 |
 | Daniel Polka | 326800 |
 
-# COM-480 - Data Visualization Milestone 1  
+# COM-480 - Data Visualization
+
 **École Polytechnique Fédérale de Lausanne (EPFL)**  
 **Authors:** Albert Fares, Hugo Jeannin, Daniel Polka  
 
-
 <img src="res/logo-epfl.png" alt="EPFL Logo" width="200">
 
+---
+
+## 📌 Project Milestones  
+- [Milestone 1 – Project Proposal](#milestone-1--project-proposal)  
+- [Milestone 2 – Development Progress](#milestone-2--development-progress)  
+- [Milestone 3 – Final Delivery](#milestone-3--final-delivery)
+
+---
+
+## Milestone 1 – Project Proposal
 
 ## Medalytics, a data-driven exploration of the Olympic Games
 
 ---
 
-## Datasets
+### Datasets
 
 For this project, we will use multiple datasets from a [GitHub repository](https://github.com/KeithGalli/Olympics-Dataset/tree/master?tab=readme-ov-file) owned by Tech YouTuber and MIT graduate Keith Galli. The data originally came from [Olympedia.org](https://www.olympedia.org/) and provides information about summer and winter Olympic games from 1896 to 2022.
 
@@ -28,9 +38,9 @@ The repository also contains additional `.csv` files with information on each co
 
 ---
 
-## Problematic
+### Problematic
 
-### Overview
+#### Overview
 
 The Olympic Games stand as the ultimate stage for international sports competition, uniting athletes from across the world to showcase their skills and determination. Since the first modern Games in 1896, the Olympics have undergone profound transformations—not only in terms of athletic performance but also in their social, political, and cultural impact.
 
@@ -38,11 +48,11 @@ We think that it would be interesting to show, among other things, the number of
 
 The reasons for choosing this dataset were simply that Lausanne is the Olympic capital and because the last Olympic Games were held next door to Switzerland, in Paris.
 
-### Target Audience
+#### Target Audience
 
 The Olympics captivate a diverse audience—from sports enthusiasts and historians to analysts and policymakers. Our project is designed to engage casual fans, who may be drawn to the visualization for fun facts, medal counts, and record-breaking moments. It could also be of interest to sports historians and researchers, looking to analyze long-term trends in performance, participation, and shifting global dominance.
 
-### Key Questions & Objectives
+#### Key Questions & Objectives
 
 Through our data visualization, we seek to explore fundamental questions such as:
 
@@ -53,7 +63,7 @@ Through our data visualization, we seek to explore fundamental questions such as
 
 ---
 
-## Exploratory Data Analysis
+### Exploratory Data Analysis
 
 To help visualize the data at this stage, we plotted three graphs using *pandas* and *Matplotlib* (you can see the code used to generate them in the `analyze_data.ipynb` notebook).
 
@@ -69,7 +79,7 @@ The second and third graphs represent the total number of athletes and medals (c
 
 ---
 
-## Related Work
+### Related Work
 
 Keith Galli provided a [video](https://www.youtube.com/watch?v=oad9tVEsfI0&ab_channel=KeithGalli) on how he cleaned the datasets we are using, but we don't know about any further use of the data.
 
@@ -80,3 +90,15 @@ Unlike traditional medal tables or charts, our project will provide an interacti
 Additionally, we will create sortable rankings for athletes based on gender, age, and sport, allowing users to uncover patterns in Olympic history while simultaneously personalizing their exploration. To further enhance the experience, we plan to implement a bar chart race animation for the most decorated athletes, drawing inspiration from similar visualizations often seen on social media, particularly in music billboard rankings.
 
 We also aim to highlight emerging trends in Olympic sports by exploring the introduction of new disciplines and identifying the most frequently played sports throughout the Games. This could be visualized via a timeline of new sports introduction.
+
+---
+
+## Milestone 2 – Development Progress
+
+> TODO
+
+---
+
+## Milestone 3 – Final Delivery
+
+> TODO
