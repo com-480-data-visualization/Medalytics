@@ -98,7 +98,7 @@ We also aim to highlight emerging trends in Olympic sports by exploring the intr
 You can find the full project goal description in the [Medalytics_M2.pdf](./Medalytics_M2.pdf) file located in the root directory of this repository.
 
 The current prototype of the Medalytics website is available at:  
-🌐 [www.medalytics.ch](https://www.medalytics.ch)
+🌐 [www.medalytics.ch](https://www.medalytics.ch) OR [www.medalytics.netlify.app](https://medalytics.netlify.app/) if the first link doesn't work.
 
 ---
 
