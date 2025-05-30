@@ -57,7 +57,7 @@
 
 - **🎥 Showcase Video:**  
   A video walkthrough of the website is available here:  
-  🔗 [Watch the video](https://drive.google.com/file/d/13HEgEdi5I2hwSi5ka3DuOMkxwMpP1qK_/view?usp=share_link)
+  🔗 [Watch the video](https://drive.google.com/file/d/1qTblvffp5PYpIeqZ7hH4-nMyYRxhnDxv/view?usp=share_link)
 
 ---
 
