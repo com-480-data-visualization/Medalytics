@@ -1,8 +1,19 @@
+<table>
+  <tr>
+    <td>
+
 | Student's name | SCIPER |
 | -------------- | ------ |
-| Hugo Jeannin | 329220 |
-| Albert Fares | 341018 |
-| Daniel Polka | 326800 |
+| Hugo Jeannin   | 329220 |
+| Albert Fares   | 341018 |
+| Daniel Polka   | 326800 |
+
+  </td>
+  <td style="vertical-align: top; padding-left: 40px;">
+    <img src="res/logo-medalytics.png" alt="Medalytics Logo" width="140">
+  </td>
+  </tr>
+</table>
 
 # COM-480 - Data Visualization
 
@@ -11,7 +22,6 @@
 
 <div style="display: flex; align-items: center; gap: 40px;">
   <img src="res/logo-epfl.png" alt="EPFL Logo" width="200">
-  <img src="res/logo-medalytics.png" alt="Medalytics Logo" width="200">
 </div>
 
 ---
@@ -30,6 +40,7 @@
 ## 🔗 [www.medalytics.ch](https://www.medalytics.ch)
 
 *(If the main domain is unavailable, use the backup: [medalytics.netlify.app](https://medalytics.netlify.app/))*
+> 🧭 **Note:** For the best experience, we recommend viewing the website on **Safari**.
 
 ---
 
@@ -42,11 +53,11 @@
   The [`README.md`](./code/README.md) file inside the `code/` folder contains detailed information on how the website works, including setup instructions and explanations of its features.
 
 - **📘 Process Book:**  
-  You can find the process book in the root directory under the filename [`ProcessBook.pdf`](./ProcessBook.pdf). It outlines our design decisions, implementation strategy, and development timeline.
+  You can find the process book in the root directory under the filename [`ProcessBook.pdf`](./ProcessBook.pdf). It outlines our design decisions and implementation strategy.
 
 - **🎥 Showcase Video:**  
-  A video walkthrough of the project is available here:  
-  🔗 [Watch the video](https://drive.google.com/file/d/10hwmtNfnMW0wh7iY8uL6XLEjl9VptjU6/view?usp=share_link)
+  A video walkthrough of the website is available here:  
+  🔗 [Watch the video](https://drive.google.com/file/d/13HEgEdi5I2hwSi5ka3DuOMkxwMpP1qK_/view?usp=share_link)
 
 ---
 
