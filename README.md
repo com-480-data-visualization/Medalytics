@@ -9,14 +9,53 @@
 **École Polytechnique Fédérale de Lausanne (EPFL)**  
 **Authors:** Albert Fares, Hugo Jeannin, Daniel Polka  
 
-<img src="res/logo-epfl.png" alt="EPFL Logo" width="200">
+<div style="display: flex; align-items: center; gap: 40px;">
+  <img src="res/logo-epfl.png" alt="EPFL Logo" width="200">
+  <img src="res/logo-medalytics.png" alt="Medalytics Logo" width="200">
+</div>
 
 ---
 
 ## 📌 Project Milestones  
-- [Milestone 1 – Project Proposal](#milestone-1--project-proposal)  
+- [Milestone 3 – Final Delivery](#milestone-3--final-delivery)  
 - [Milestone 2 – Development Progress](#milestone-2--development-progress)  
-- [Milestone 3 – Final Delivery](#milestone-3--final-delivery)
+- [Milestone 1 – Project Proposal](#milestone-1--project-proposal)
+
+---
+
+## Milestone 3 – Final Delivery
+
+### 🖥️ ACCESS THE WEBSITE
+
+## 🔗 [www.medalytics.ch](https://www.medalytics.ch)
+
+*(If the main domain is unavailable, use the backup: [medalytics.netlify.app](https://medalytics.netlify.app/))*
+
+---
+
+### 📁 Project Artifacts
+
+- **🔧 Codebase:**  
+  The full source code for the website is located in the [`code/`](./code/) folder of the repository.
+
+- **📄 Documentation:**  
+  The [`README.md`](./code/README.md) file inside the `code/` folder contains detailed information on how the website works, including setup instructions and explanations of its features.
+
+- **📘 Process Book:**  
+  You can find the process book in the root directory under the filename [`ProcessBook.pdf`](./ProcessBook.pdf). It outlines our design decisions, implementation strategy, and development timeline.
+
+- **🎥 Showcase Video:**  
+  A video walkthrough of the project is available here:  
+  🔗 [Watch the video](https://drive.google.com/file/d/10hwmtNfnMW0wh7iY8uL6XLEjl9VptjU6/view?usp=share_link)
+
+---
+
+## Milestone 2 – Development Progress
+
+You can find the full project goal description in the [Medalytics_M2.pdf](./Medalytics_M2.pdf) file located in the root directory of this repository.
+
+The current prototype of the Medalytics website is available at:  
+🌐 [www.medalytics.ch](https://www.medalytics.ch) OR [www.medalytics.netlify.app](https://medalytics.netlify.app/) if the first link doesn't work.
 
 ---
 
@@ -90,18 +129,3 @@ Unlike traditional medal tables or charts, our project will provide an interacti
 Additionally, we will create sortable rankings for athletes based on gender, age, and sport, allowing users to uncover patterns in Olympic history while simultaneously personalizing their exploration. To further enhance the experience, we plan to implement a bar chart race animation for the most decorated athletes, drawing inspiration from similar visualizations often seen on social media, particularly in music billboard rankings.
 
 We also aim to highlight emerging trends in Olympic sports by exploring the introduction of new disciplines and identifying the most frequently played sports throughout the Games. This could be visualized via a timeline of new sports introduction.
-
----
-
-## Milestone 2 – Development Progress
-
-You can find the full project goal description in the [Medalytics_M2.pdf](./Medalytics_M2.pdf) file located in the root directory of this repository.
-
-The current prototype of the Medalytics website is available at:  
-🌐 [www.medalytics.ch](https://www.medalytics.ch) OR [www.medalytics.netlify.app](https://medalytics.netlify.app/) if the first link doesn't work.
-
----
-
-## Milestone 3 – Final Delivery
-
-> TODO
