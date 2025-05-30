@@ -1,0 +1,235 @@
+/* Olympic Sports Treemap CSS */
+
+/* Container and Layout Styles */
+.treemap-container {
+  font-family: 'SF Pro', 'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: var(--bg-primary);
+  border-radius: 2em;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  padding: 25px;
+  max-width: 1400px;
+  width: 95%;
+  margin: 20px auto;
+  position: relative;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.treemap-title {
+  color: var(--gold);
+  font-size: 24px !important;
+  font-weight: 600 !important;
+  font-family: 'SF Pro', 'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.treemap-subtitle {
+  color: var(--text-primary);
+  font-size: 14px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.treemap-wrapper {
+  position: relative;
+  margin: 20px 0;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.treemap-footer {
+  margin-top: 20px;
+  color: var(--text-primary);
+  font-size: 12px;
+  font-style: italic;
+  text-align: center;
+}
+
+.treemap-note {
+  margin-top: 5px;
+  color: var(--silver);
+}
+
+/* Year Slider Styles */
+.year-slider-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.03);
+  border-radius: 10px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.year-slider {
+  width: 80%;
+  max-width: 600px;
+  margin-bottom: 10px;
+  -webkit-appearance: none;
+  height: 5px;
+  border-radius: 5px;
+  background: var(--light-gray);
+  outline: none;
+}
+
+.year-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--gold);
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s ease;
+}
+
+.year-slider::-webkit-slider-thumb:hover {
+  transform: scale(1.1);
+}
+
+.year-slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--gold);
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s ease;
+  border: none;
+}
+
+.year-slider::-moz-range-thumb:hover {
+  transform: scale(1.1);
+}
+
+.year-label {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--text-primary);
+  margin-top: 5px;
+}
+
+/* Treemap Content Styles */
+.treemap-rect {
+  stroke: #fff;
+  stroke-width: 1;
+  stroke-opacity: 0.7;
+}
+
+.treemap-name-text {
+  fill: #fff;
+  font-size: 12px;
+  font-weight: normal;
+  pointer-events: none;
+  letter-spacing: 0.5px;
+  text-anchor: middle;
+}
+
+.treemap-size-text {
+  fill: #fff;
+  font-size: 10px;
+  font-weight: lighter;
+  pointer-events: none;
+  letter-spacing: 0.5px;
+  text-anchor: middle;
+}
+
+/* Tooltip Styles */
+.custom-treemap-tooltip {
+  background-color: var(--bg-primary);
+  border: 1px solid var(--light-gray);
+  border-radius: 6px;
+  padding: 10px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sport-name {
+  color: var(--text-primary);
+  font-weight: 600;
+  margin: 0 0 5px 0;
+}
+
+.athlete-count {
+  color: var(--gold);
+  font-weight: 600;
+  font-size: 18px;
+  margin: 0;
+}
+
+/* Loading and Error Styles */
+.treemap-loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  width: 95%;
+  max-width: 1400px;
+  margin: 20px auto;
+}
+
+.treemap-loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid rgba(46, 46, 46, 0.1);
+  border-radius: 50%;
+  border-top-color: var(--gold);
+  animation: spin 1s ease-in-out infinite;
+  margin-bottom: 15px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.treemap-error-container {
+  background-color: var(--bg-primary);
+  border-left: 4px solid var(--bronze);
+  padding: 20px;
+  color: var(--text-primary);
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  width: 95%;
+  max-width: 1400px;
+  margin: 20px auto;
+}
+
+.no-data-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: var(--text-primary);
+  font-size: 18px;
+  font-style: italic;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .treemap-container {
+    padding: 15px;
+  }
+  
+  .treemap-title {
+    font-size: 20px;
+  }
+  
+  .treemap-wrapper {
+    height: 400px;
+  }
+  
+  .year-slider {
+    width: 90%;
+  }
+} 

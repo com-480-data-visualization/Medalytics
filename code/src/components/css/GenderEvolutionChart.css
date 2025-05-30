@@ -1,0 +1,163 @@
+/* src/components/GenderEvolutionChart.css */
+.gender-evolution-container {
+    font-family: 'SF Pro', 'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: var(--bg-primary);
+    border-radius: 2em;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    padding: 25px;
+    max-width: 1400px;
+    width: 100%;
+    margin: 20px auto;
+    position: relative;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .chart-title {
+    color: var(--gold);
+    font-size: 24px !important;
+    font-weight: 600 !important;
+    font-family: 'SF Pro', 'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif !important;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  .chart-controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .chart-button {
+    padding: 10px 15px;
+    background-color: var(--bg-primary);
+    border: 1px solid var(--light-gray);
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.2s ease;
+    color: var(--text-primary);
+  }
+  
+  .chart-button:hover {
+    background-color: var(--light-gray);
+    color: var(--muted-navy);
+  }
+  
+  .chart-button.active {
+    background-color: var(--gold);
+    color: var(--bg-primary);
+    border-color: var(--silver);
+  }
+  
+  .chart-container {
+    margin-bottom: 20px;
+  }
+
+  /* Target the hover cursor background - make it much less opaque */
+  .recharts-tooltip-cursor {
+    opacity: 0.4 !important;
+    fill-opacity: 0.4 !important;
+  }
+
+  /* Alternative targeting for hover background */
+  .recharts-cartesian-grid-cursor {
+    opacity: 0.4 !important;
+    fill-opacity: 0.4 !important;
+  }
+  
+  .chart-observations {
+    background-color: var(--bg-primary);
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    border: 1px solid var(--light-gray);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .chart-observations h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: var(--gold);
+    font-weight: 600;
+  }
+  
+  .chart-observations ul {
+    padding-left: 20px;
+    margin: 0;
+  }
+  
+  .chart-observations li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+    color: var(--text-primary);
+  }
+  
+  /* Custom tooltip styling */
+  .custom-tooltip {
+    background-color: var(--bg-primary);
+    border: 1px solid var(--light-gray);
+    border-radius: 6px;
+    padding: 10px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .custom-tooltip p {
+    margin: 5px 0;
+    color: var(--text-primary);
+  }
+  
+  .custom-tooltip .year {
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: var(--gold);
+  }
+  
+  /* Loading and error states */
+  .loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    color: var(--text-primary);
+  }
+  
+  .loading-spinner {
+    width: 40px;
+    height: 40px;
+    border: 3px solid rgba(46, 46, 46, 0.1);
+    border-radius: 50%;
+    border-top-color: var(--gold);
+    animation: spin 1s ease-in-out infinite;
+    margin-bottom: 15px;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .error-container {
+    background-color: #FDFBF7;
+    border-left: 4px solid #CD7F32;
+    padding: 20px;
+    color: #2E2E2E;
+    border-radius: 4px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .chart-controls {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+    
+    .chart-button {
+      width: 100%;
+      max-width: 250px;
+    }
+  } 

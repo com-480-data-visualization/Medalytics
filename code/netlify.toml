@@ -1,0 +1,8 @@
+[build]
+  command = "npm install papaparse d3 topojson-client --save && CI=false npm run build"
+  publish = "build"
+# [[redirects]]
+#   from = "https://medalytics.ch/*"
+#   to = "https://www.medalytics.ch/:splat"
+#   status = 301
+#   force = true

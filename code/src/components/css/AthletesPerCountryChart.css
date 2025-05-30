@@ -1,0 +1,199 @@
+/* src/components/AthletesPerCountryChart.css */
+.athletes-chart-container {
+  font-family: 'SF Pro', 'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: var(--bg-primary);
+  border-radius: 2em;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  padding: 25px;
+  max-width: 1400px;
+  width: 95%;
+  margin: 20px auto;
+  position: relative;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.chart-title {
+  color: var(--gold);
+  font-size: 24px !important;
+  font-weight: 600 !important;
+  font-family: 'SF Pro', 'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.chart-subtitle {
+  color: var(--text-primary);
+  font-size: 14px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Color picker styling */
+.color-picker-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.color-picker {
+  margin-left: 10px;
+  width: 50px;
+  height: 30px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.chart-wrapper {
+  position: relative;
+  margin: 0;
+  width: 100%;
+}
+
+.chart-scrollable-container {
+  width: 100%;
+  height: 600px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding: 0;
+  position: relative;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+  scrollbar-color: var(--silver) var(--bg-primary);
+}
+
+.chart-scrollable-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.chart-scrollable-container::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+  border-radius: 10px;
+}
+
+.chart-scrollable-container::-webkit-scrollbar-thumb {
+  background: var(--silver);
+  border-radius: 10px;
+}
+
+.chart-scrollable-container::-webkit-scrollbar-thumb:hover {
+  background: var(--bronze);
+}
+
+.chart-inner-container {
+  min-height: 600px;
+  width: 100%;
+}
+
+.chart-footer {
+  margin-top: 20px;
+  color: var(--text-primary);
+  font-size: 12px;
+  font-style: italic;
+  text-align: center;
+}
+
+/* Custom tooltip styling */
+.custom-tooltip {
+  background-color: var(--bg-primary);
+  border: 1px solid var(--light-gray);
+  border-radius: 6px;
+  padding: 10px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.country-name {
+  color: var(--text-primary);
+  font-weight: 600;
+  margin: 0 0 5px 0;
+}
+
+.athlete-count {
+  color: var(--gold);
+  font-weight: 600;
+  font-size: 18px;
+  margin: 0;
+}
+
+/* Loading and error states */
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  color: var(--text-primary);
+}
+
+.loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid rgba(46, 46, 46, 0.1);
+  border-radius: 50%;
+  border-top-color: var(--gold);
+  animation: spin 1s ease-in-out infinite;
+  margin-bottom: 15px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.error-container {
+  background-color: var(--bg-primary);
+  border-left: 4px solid var(--bronze);
+  padding: 20px;
+  color: var(--text-primary);
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Add these new classes for additional Olympic themed elements */
+.gold-text {
+  color: var(--gold);
+}
+
+.silver-text {
+  color: var(--silver);
+}
+
+.bronze-text {
+  color: var(--bronze);
+}
+
+.medal-link {
+  color: var(--muted-navy);
+  text-decoration: none;
+  border-bottom: 1px solid var(--light-gray);
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.medal-link:hover {
+  border-color: var(--gold);
+  color: var(--gold);
+}
+
+/* Only target the specific blue outline on the tooltip */
+.recharts-tooltip-wrapper {
+  outline: none !important;
+}
+
+/* Remove blue focus border from tooltip and its container */
+.recharts-tooltip-cursor {
+  stroke: none !important;
+}
+
+/* Keep hover effects on bars but remove unwanted outlines */
+.recharts-rectangle.recharts-tooltip-cursor {
+  stroke: none !important;
+}
+
+/* Keep tooltip content properly styled */
+.custom-tooltip {
+  outline: none !important;
+  border: 1px solid var(--light-gray) !important;
+}

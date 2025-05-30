@@ -1,0 +1,641 @@
+.medal-race-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  min-height: min-content;
+  height: auto;
+  color: var(--text-primary);
+  font-family: 'SF Pro', 'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif;
+  padding: 25px 20px;
+  position: relative;
+  background-color: var(--bg-primary);
+  border-radius: 2em;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  overflow-x: hidden;
+}
+
+.medal-race-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.medal-race-title {
+  font-size: 24px !important;
+  font-weight: 600 !important;
+  font-family: 'SF Pro', 'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  margin-bottom: 40px;
+  text-align: center;
+  color: var(--gold);
+}
+
+.medal-race-subtitle {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: var(--text-secondary);
+  max-width: 700px;
+}
+
+.medal-race-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.medal-race-dropdown-container {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 20px;
+}
+
+.medal-race-dropdown-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.medal-race-dropdown-label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.medal-race-dropdown-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.medal-race-dropdown-action {
+  background-color: #6666668a;
+  color: white;
+  border: none;
+  padding: 5px 16px;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 10px;
+}
+
+.medal-race-dropdown-action:hover {
+  background-color: #888;
+  color: white;
+}
+
+.medal-race-dropdown {
+  position: relative;
+  width: 100%;
+}
+
+.medal-race-dropdown-select {
+  width: 100%;
+  padding: 12px 15px;
+  background: var(--bg-primary);
+  border: 1px solid var(--light-gray);
+  border-radius: 6px;
+  color: var(--text-primary);
+  font-size: 0.9rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: border-color 0.2s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.medal-race-dropdown-select:focus, 
+.medal-race-dropdown-select:active {
+  border-color: var(--gold);
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(255, 215, 0, 0.3);
+}
+
+.medal-race-dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  max-height: 300px;
+  overflow-y: auto;
+  background: var(--bg-primary);
+  border: 1px solid var(--light-gray);
+  border-radius: 6px;
+  z-index: 10;
+  display: none;
+  margin-top: 5px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.medal-race-dropdown-menu.open {
+  display: block;
+}
+
+.medal-race-dropdown-option {
+  padding: 12px 15px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.2s ease;
+}
+
+.medal-race-dropdown-option:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.medal-race-dropdown-checkbox {
+  margin-right: 10px;
+  appearance: none;
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--gold);
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.medal-race-dropdown-checkbox:checked {
+  background-color: var(--gold);
+}
+
+.medal-race-dropdown-checkbox:checked::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.medal-race-dropdown-checkbox:hover {
+  border-color: var(--gold);
+  box-shadow: 0 0 0 2px var(--transparent-gold);
+}
+
+.medal-race-timeline-container {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: -10px;
+  padding-top: 5px;
+}
+
+.medal-race-timeline-label {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.medal-race-year-display {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--gold);
+  transition: color 0.2s ease-out;
+}
+
+.medal-race-timeline {
+  width: 100%;
+  height: 15px;
+  background: #88888871;
+  border-radius: 15px;
+  position: relative;
+  overflow: visible;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.medal-race-timeline-progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: var(--gold);
+  border-radius: 15px;
+  transition: width 0.3s ease-in-out;
+  max-width: 100%;
+}
+
+.medal-race-timeline-progress.dragging {
+  transition: none;
+}
+
+.medal-race-timeline-thumb {
+  position: absolute;
+  top: 50%;
+  width: 30px;
+  height: 30px;
+  background-color: var(--gold);
+  border-radius: 50%;
+  cursor: grab;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-inverse);
+  font-weight: 700;
+  font-size: 1.2rem;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+  transition: left 0.3s ease-out, transform 0.2s ease-out, box-shadow 0.2s ease-out;
+  white-space: nowrap;
+  will-change: left, transform;
+}
+
+.medal-race-timeline-thumb:hover {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.medal-race-timeline-thumb.dragging {
+  cursor: grabbing;
+  transition: none;
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.medal-race-timeline-thumb.at-start {
+  left: 0 !important;
+}
+
+.medal-race-timeline-thumb.at-end {
+  left: 100% !important;
+}
+
+.medal-race-play-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center !important;
+  gap: 15px;
+  margin-top: 30px;
+  margin-bottom: -15px;
+}
+
+.medal-race-control-button {
+  background: transparent;
+  border: none;
+  color: var(--gold);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-size: 1rem;
+  padding: 0;
+  outline: none;
+}
+
+.medal-race-control-button:hover {
+  transform: scale(1.15);
+}
+
+.medal-race-control-button.play-pause {
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+  border: none;
+  color: var(--gold);
+  font-size: 1.3rem;
+  transition: all 0.3s ease-in-out;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.control-icon {
+  width: 32px;
+  height: 32px;
+  fill: var(--gold);
+  stroke: var(--gold);
+  display: flex;
+}
+
+.control-icon path {
+  fill: var(--gold);
+  stroke: var(--gold);
+}
+
+.play-pause .control-icon {
+  width: 36px;
+  height: 36px;
+}
+
+.replay-icon {
+  color: var(--gold);
+  font-size: 28px;
+  font-weight: bold;
+  display: block;
+}
+
+.medal-race-control-button.disabled,
+.medal-race-control-button.disabled:hover {
+  background-color: transparent;
+  border: none;
+  color: #88888860;
+  cursor: not-allowed;
+  opacity: 0.5;
+  transform: none;
+}
+
+.medal-race-control-button.disabled .control-icon path,
+.medal-race-control-button.disabled:hover .control-icon path {
+  fill: #88888860;
+  stroke: #88888860;
+}
+
+.medal-race-control-button.disabled .replay-icon {
+  color: #88888860;
+}
+
+.medal-race-control-button.disabled svg.control-icon, 
+.medal-race-control-button.disabled svg.control-icon path {
+  fill: #88888860 !important;
+  stroke: #88888860 !important;
+}
+
+.medal-race-chart-container {
+  width: 100%;
+  max-width: 1200px;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  flex-grow: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+  padding: 0;
+  gap: 10px;
+}
+
+.medal-race-bar {
+  display: flex;
+  align-items: center;
+  position: relative;
+  left: 0;
+  right: 0;
+  width: 100%;
+  margin-bottom: 0;
+  flex: 1;
+  min-height: 25px;
+  transition: all 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+  z-index: 1;
+}
+
+.medal-race-bar:last-child {
+  margin-bottom: 0;
+}
+
+.medal-race-bar-label {
+  min-width: 120px;
+  width: 120px;
+  text-align: right;
+  padding-right: 15px;
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--text-primary);
+  z-index: 2;
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex-shrink: 0;
+}
+
+.medal-race-bar-value {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  border-radius: 7px;
+  padding: 0 15px;
+  color: var(--text-inverse);
+  font-weight: 600;
+  position: relative;
+  transition: width 0.5s ease-in-out;
+  min-width: 50px;
+  opacity: 1;
+  z-index: 2;
+}
+
+.medal-race-bar-count {
+  margin-left: 10px;
+  font-size: 1.2rem;
+  color: var(--text-inverse);
+  font-weight: 700;
+  position: absolute;
+  right: 15px;
+}
+
+.medal-race-footer {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  margin-top: 15px;
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+  .medal-race-container {
+    padding: 20px 15px;
+  }
+
+  .medal-race-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .medal-race-chart-container {
+    margin-bottom: 15px;
+    height: 350px;
+  }
+  
+  .medal-race-bar-label {
+    width: 100px;
+    font-size: 0.9rem;
+  }
+  
+  .medal-race-controls {
+    margin-bottom: 20px;
+  }
+  
+  .medal-race-play-controls {
+    margin-top: 15px;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .medal-race-container {
+    padding: 15px 10px;
+  }
+
+  .medal-race-title {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  
+  .medal-race-chart-container {
+    margin-bottom: 10px;
+    height: 300px;
+  }
+  
+  .medal-race-bar-label {
+    width: 80px;
+    font-size: 0.8rem;
+    padding-right: 10px;
+  }
+  
+  .medal-race-dropdown-actions {
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .medal-race-controls {
+    margin-bottom: 15px;
+  }
+  
+  .medal-race-play-controls {
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+}
+
+/* Bar colors with RGBA values for better color rendering */
+.medal-race-chart-container .medal-race-bar-value.level1 {
+  background-color: rgba(205, 127, 50, 1) !important;
+  box-shadow: 0 2px 8px rgba(205, 127, 50, 0.5);
+}
+
+.medal-race-chart-container .medal-race-bar-value.level2 {
+  background-color: rgba(216, 159, 100, 1) !important;
+  box-shadow: 0 2px 8px rgba(216, 159, 100, 0.5);
+}
+
+.medal-race-chart-container .medal-race-bar-value.level3 {
+  background-color: rgba(224, 183, 120, 1) !important;
+  box-shadow: 0 2px 8px rgba(224, 183, 120, 0.5);
+}
+
+.medal-race-chart-container .medal-race-bar-value.level4 {
+  background-color: rgba(230, 200, 140, 1) !important;
+  box-shadow: 0 2px 8px rgba(232, 207, 140, 0.5);
+}
+
+.medal-race-chart-container .medal-race-bar-value.level5 {
+  background-color: rgba(232, 207, 140, 1) !important;
+  box-shadow: 0 2px 8px rgba(232, 207, 140, 0.5);
+}
+
+.medal-race-chart-container .medal-race-bar-value.level6 {
+  background-color: rgba(192, 192, 192, 1) !important;
+  box-shadow: 0 2px 8px rgba(192, 192, 192, 0.5);
+}
+
+.medal-race-chart-container .medal-race-bar-value.level7 {
+  background-color: rgba(202, 189, 130, 1) !important;
+  box-shadow: 0 2px 8px rgba(202, 189, 130, 0.5);
+}
+
+.medal-race-chart-container .medal-race-bar-value.level8 {
+  background-color: rgba(207, 188, 106, 1) !important;
+  box-shadow: 0 2px 8px rgba(207, 188, 106, 0.5);
+}
+
+.medal-race-chart-container .medal-race-bar-value.level9 {
+  background-color: rgba(210, 165, 70, 1) !important;
+  box-shadow: 0 2px 8px rgba(210, 165, 70, 0.5);
+}
+
+.medal-race-chart-container .medal-race-bar-value.level10 {
+  background-color: rgba(212, 175, 55, 1) !important;
+  box-shadow: 0 2px 8px rgba(212, 175, 55, 0.5);
+}
+
+@keyframes increaseWidth {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+.medal-race-bar-value.animate {
+  animation: increaseWidth 0.5s ease-in-out forwards;
+}
+
+.medal-race-empty-state {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 100%;
+  max-width: 900px;
+  margin: 20px auto;
+  border: 2px dashed #88888871;
+  border-radius: 8px;
+  margin-top: 60px;
+}
+
+.medal-race-empty-state p {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  text-align: center;
+  max-width: 80%;
+  line-height: 1.5;
+}
+
+/* Force the SVG icons to use gold color */
+svg.control-icon {
+  width: 32px !important;
+  height: 32px !important;
+  fill: var(--gold) !important;
+  stroke: var(--gold) !important;
+}
+
+svg.control-icon path {
+  fill: var(--gold) !important;
+  stroke: var(--gold) !important;
+}
+
+.medal-race-control-button.disabled svg.control-icon, 
+.medal-race-control-button.disabled svg.control-icon path {
+  fill: #88888860 !important;
+  stroke: #88888860 !important;
+}
+
+/* Ensure all controls have same vertical center */
+.medal-race-control-button {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.medal-race-control-button.play-pause {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.medal-race-control-button.play-pause svg.control-icon {
+  width: 36px !important;
+  height: 36px !important;
+} 

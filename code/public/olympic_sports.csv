@@ -1,0 +1,277 @@
+athlete_id,name,games,sport,event,medal
+1,John Smith,2016 Summer,Swimming,Men's 100m Freestyle,Gold
+2,Emily Johnson,2016 Summer,Swimming,Women's 200m Freestyle,Silver
+3,Michael Brown,2016 Summer,Swimming,Men's 400m Freestyle,Bronze
+4,Jessica Williams,2016 Summer,Swimming,Women's 100m Backstroke,Gold
+5,David Jones,2016 Summer,Swimming,Men's 200m Backstroke,Silver
+6,Sarah Garcia,2016 Summer,Swimming,Women's 200m Butterfly,Bronze
+7,James Miller,2016 Summer,Athletics,Men's 100m,Gold
+8,Robert Davis,2016 Summer,Athletics,Men's 200m,Silver
+9,Linda Martinez,2016 Summer,Athletics,Women's 100m,Bronze
+10,Patricia Rodriguez,2016 Summer,Athletics,Women's 200m,Gold
+11,Daniel Wilson,2016 Summer,Athletics,Men's Long Jump,Silver
+12,Elizabeth Taylor,2016 Summer,Athletics,Women's Long Jump,Bronze
+13,Thomas Anderson,2016 Summer,Gymnastics,Men's Floor Exercise,Gold
+14,Mark Thomas,2016 Summer,Gymnastics,Men's Vault,Silver
+15,Nancy Jackson,2016 Summer,Gymnastics,Women's Balance Beam,Bronze
+16,Charles White,2016 Summer,Gymnastics,Men's Parallel Bars,Gold
+17,Margaret Harris,2016 Summer,Gymnastics,Women's Floor Exercise,Silver
+18,George Martin,2016 Summer,Gymnastics,Women's Uneven Bars,Bronze
+19,Steven Thompson,2016 Summer,Basketball,Men's Basketball,Gold
+20,Christopher Garcia,2016 Summer,Basketball,Women's Basketball,Silver
+21,Paul Robinson,2016 Summer,Football,Men's Football,Bronze
+22,Mary Clark,2016 Summer,Football,Women's Football,Gold
+23,Donald Lewis,2016 Summer,Tennis,Men's Singles,Silver
+24,Susan Lee,2016 Summer,Tennis,Women's Singles,Bronze
+25,Kevin Walker,2016 Summer,Tennis,Mixed Doubles,Gold
+26,Edward Hall,2016 Summer,Boxing,Men's Lightweight,Silver
+27,Matthew Allen,2016 Summer,Boxing,Men's Heavyweight,Bronze
+28,Ashley Young,2016 Summer,Boxing,Women's Flyweight,Gold
+29,Sandra King,2016 Summer,Judo,Women's Lightweight,Silver
+30,Betty Wright,2016 Summer,Judo,Women's Heavyweight,Bronze
+31,Richard Scott,2012 Summer,Swimming,Men's 100m Freestyle,Gold
+32,Barbara Green,2012 Summer,Swimming,Women's 200m Freestyle,Silver
+33,Joseph Adams,2012 Summer,Swimming,Men's 400m Freestyle,Bronze
+34,Dorothy Baker,2012 Summer,Swimming,Women's 100m Backstroke,Gold
+35,Jason Gonzalez,2012 Summer,Swimming,Men's 200m Backstroke,Silver
+36,Kimberly Nelson,2012 Summer,Swimming,Women's 200m Butterfly,Bronze
+37,Jeffrey Carter,2012 Summer,Athletics,Men's 100m,Gold
+38,Ryan Mitchell,2012 Summer,Athletics,Men's 200m,Silver
+39,Sharon Perez,2012 Summer,Athletics,Women's 100m,Bronze
+40,Laura Roberts,2012 Summer,Athletics,Women's 200m,Gold
+41,Harold Turner,2012 Summer,Athletics,Men's Long Jump,Silver
+42,Carol Phillips,2012 Summer,Athletics,Women's Long Jump,Bronze
+43,Anthony Campbell,2012 Summer,Gymnastics,Men's Floor Exercise,Gold
+44,Daniel Evans,2012 Summer,Gymnastics,Men's Vault,Silver
+45,Ruth Torres,2012 Summer,Gymnastics,Women's Balance Beam,Bronze
+46,Stephen Edwards,2012 Summer,Gymnastics,Men's Parallel Bars,Gold
+47,Deborah Collins,2012 Summer,Gymnastics,Women's Floor Exercise,Silver
+48,Ronald Stewart,2012 Summer,Gymnastics,Women's Uneven Bars,Bronze
+49,Daniel Murphy,2012 Summer,Basketball,Men's Basketball,Gold
+50,Steven Rivera,2012 Summer,Basketball,Women's Basketball,Silver
+51,Edward Morgan,2012 Summer,Football,Men's Football,Bronze
+52,Michelle Wood,2012 Summer,Football,Women's Football,Gold
+53,Larry Cook,2012 Summer,Tennis,Men's Singles,Silver
+54,Sarah Bailey,2012 Summer,Tennis,Women's Singles,Bronze
+55,William Bell,2012 Summer,Tennis,Mixed Doubles,Gold
+56,Gary Cooper,2012 Summer,Boxing,Men's Lightweight,Silver
+57,Raymond Richardson,2012 Summer,Boxing,Men's Heavyweight,Bronze
+58,Nicole Cox,2012 Summer,Boxing,Women's Flyweight,Gold
+59,Stephanie Howard,2012 Summer,Judo,Women's Lightweight,Silver
+60,Melissa Ward,2012 Summer,Judo,Women's Heavyweight,Bronze
+61,Kenneth Morris,2008 Summer,Swimming,Men's 100m Freestyle,Gold
+62,Christine Kim,2008 Summer,Swimming,Women's 200m Freestyle,Silver
+63,Joshua Flores,2008 Summer,Swimming,Men's 400m Freestyle,Bronze
+64,Kathleen Price,2008 Summer,Swimming,Women's 100m Backstroke,Gold
+65,Frank Brooks,2008 Summer,Swimming,Men's 200m Backstroke,Silver
+66,Amanda Bennett,2008 Summer,Swimming,Women's 200m Butterfly,Bronze
+67,Harry Wood,2008 Summer,Athletics,Men's 100m,Gold
+68,Carl Barnes,2008 Summer,Athletics,Men's 200m,Silver
+69,Anne Ross,2008 Summer,Athletics,Women's 100m,Bronze
+70,Julia Henderson,2008 Summer,Athletics,Women's 200m,Gold
+71,Harry Coleman,2008 Summer,Athletics,Men's Long Jump,Silver
+72,Phyllis Gray,2008 Summer,Athletics,Women's Long Jump,Bronze
+73,Jerry James,2008 Summer,Gymnastics,Men's Floor Exercise,Gold
+74,Terry Watson,2008 Summer,Gymnastics,Men's Vault,Silver
+75,Willie Brooks,2008 Summer,Gymnastics,Women's Balance Beam,Bronze
+76,Ralph Alexander,2008 Summer,Gymnastics,Men's Parallel Bars,Gold
+77,Joan Russell,2008 Summer,Gymnastics,Women's Floor Exercise,Silver
+78,Roy Griffin,2008 Summer,Gymnastics,Women's Uneven Bars,Bronze
+79,Wayne Diaz,2008 Summer,Basketball,Men's Basketball,Gold
+80,Joe Hayes,2008 Summer,Basketball,Women's Basketball,Silver
+81,Henry Gibson,2008 Summer,Football,Men's Football,Bronze
+82,Beverly Carroll,2008 Summer,Football,Women's Football,Gold
+83,Johnny Kelly,2008 Summer,Tennis,Men's Singles,Silver
+84,Tammy Elliott,2008 Summer,Tennis,Women's Singles,Bronze
+85,Phillip West,2008 Summer,Tennis,Mixed Doubles,Gold
+86,Arthur Jordan,2008 Summer,Boxing,Men's Lightweight,Silver
+87,Bruce Sullivan,2008 Summer,Boxing,Men's Heavyweight,Bronze
+88,Donna Fowler,2008 Summer,Boxing,Women's Flyweight,Gold
+89,Norma Graham,2008 Summer,Judo,Women's Lightweight,Silver
+90,Pamela Sullivan,2008 Summer,Judo,Women's Heavyweight,Bronze
+91,Earl Reynolds,2004 Summer,Swimming,Men's 100m Freestyle,Gold
+92,Rachel Hunt,2004 Summer,Swimming,Women's 200m Freestyle,Silver
+93,Eugene Dixon,2004 Summer,Swimming,Men's 400m Freestyle,Bronze
+94,Wanda Shaw,2004 Summer,Swimming,Women's 100m Backstroke,Gold
+95,Cecil Stone,2004 Summer,Swimming,Men's 200m Backstroke,Silver
+96,Constance Hunt,2004 Summer,Swimming,Women's 200m Butterfly,Bronze
+97,Glen Keller,2004 Summer,Athletics,Men's 100m,Gold
+98,Glen Miles,2004 Summer,Athletics,Men's 200m,Silver
+99,Marjorie Lane,2004 Summer,Athletics,Women's 100m,Bronze
+100,Velma Perkins,2004 Summer,Athletics,Women's 200m,Gold
+101,Freddie Grant,2004 Summer,Athletics,Men's Long Jump,Silver
+102,Arlene Weber,2004 Summer,Athletics,Women's Long Jump,Bronze
+103,Harvey Butler,2004 Summer,Gymnastics,Men's Floor Exercise,Gold
+104,Victor Carpenter,2004 Summer,Gymnastics,Men's Vault,Silver
+105,Gladys Stevens,2004 Summer,Gymnastics,Women's Balance Beam,Bronze
+106,Lee McLaughlin,2004 Summer,Gymnastics,Men's Parallel Bars,Gold
+107,Hazel Reyes,2004 Summer,Gymnastics,Women's Floor Exercise,Silver
+108,Oscar Kennedy,2004 Summer,Gymnastics,Women's Uneven Bars,Bronze
+109,Homer Fields,2004 Summer,Basketball,Men's Basketball,Gold
+110,Bernard Mills,2004 Summer,Basketball,Women's Basketball,Silver
+111,Angelo Alvarez,2004 Summer,Football,Men's Football,Bronze
+112,Bertha Spencer,2004 Summer,Football,Women's Football,Gold
+113,Rufus Warren,2004 Summer,Tennis,Men's Singles,Silver
+114,Grace Daniels,2004 Summer,Tennis,Women's Singles,Bronze
+115,Clifton George,2004 Summer,Tennis,Mixed Doubles,Gold
+116,Clinton Austin,2004 Summer,Boxing,Men's Lightweight,Silver
+117,Lyle Wallace,2004 Summer,Boxing,Men's Heavyweight,Bronze
+118,Marian Nichols,2004 Summer,Boxing,Women's Flyweight,Gold
+119,Lola Crawford,2004 Summer,Judo,Women's Lightweight,Silver
+120,Suzanne Armstrong,2004 Summer,Judo,Women's Heavyweight,Bronze
+121,Elliot Drake,2000 Summer,Swimming,Men's 100m Freestyle,Gold
+122,Hilda Ramos,2000 Summer,Swimming,Women's 200m Freestyle,Silver
+123,Wilbur Andrews,2000 Summer,Swimming,Men's 400m Freestyle,Bronze
+124,Pearl Schneider,2000 Summer,Swimming,Women's 100m Backstroke,Gold
+125,Floyd Walters,2000 Summer,Swimming,Men's 200m Backstroke,Silver
+126,Genevieve Ryan,2000 Summer,Swimming,Women's 200m Butterfly,Bronze
+127,Willis Burton,2000 Summer,Athletics,Men's 100m,Gold
+128,Otis Palmer,2000 Summer,Athletics,Men's 200m,Silver
+129,Ethel Drake,2000 Summer,Athletics,Women's 100m,Bronze
+130,Mattie Vargas,2000 Summer,Athletics,Women's 200m,Gold
+131,Clarence Glover,2000 Summer,Athletics,Men's Long Jump,Silver
+132,Essie Klein,2000 Summer,Athletics,Women's Long Jump,Bronze
+133,Chester Logan,2000 Summer,Gymnastics,Men's Floor Exercise,Gold
+134,Ivan Maldonado,2000 Summer,Gymnastics,Men's Vault,Silver
+135,Eloise Day,2000 Summer,Gymnastics,Women's Balance Beam,Bronze
+136,Marshall Douglas,2000 Summer,Gymnastics,Men's Parallel Bars,Gold
+137,Myrtle Robbins,2000 Summer,Gymnastics,Women's Floor Exercise,Silver
+138,Julius Barnett,2000 Summer,Gymnastics,Women's Uneven Bars,Bronze
+139,Melvin Goodwin,2000 Summer,Basketball,Men's Basketball,Gold
+140,Russell Graves,2000 Summer,Basketball,Women's Basketball,Silver
+141,Willard Fisher,2000 Summer,Football,Men's Football,Bronze
+142,Henrietta Estrada,2000 Summer,Football,Women's Football,Gold
+143,Leroy Klein,2000 Summer,Tennis,Men's Singles,Silver
+144,Adele Harmon,2000 Summer,Tennis,Women's Singles,Bronze
+145,Vernon Francis,2000 Summer,Tennis,Mixed Doubles,Gold
+146,Delbert Love,2000 Summer,Boxing,Men's Lightweight,Silver
+147,Oliver McKinney,2000 Summer,Boxing,Men's Heavyweight,Bronze
+148,Cecelia Carpenter,2000 Summer,Boxing,Women's Flyweight,Gold
+149,Rosie Medina,2000 Summer,Judo,Women's Lightweight,Silver
+150,Pauline Wade,2000 Summer,Judo,Women's Heavyweight,Bronze
+151,Wilfred Meyer,1996 Summer,Swimming,Men's 100m Freestyle,Gold
+152,Leona Pena,1996 Summer,Swimming,Women's 200m Freestyle,Silver
+153,Alex Caldwell,1996 Summer,Swimming,Men's 400m Freestyle,Bronze
+154,Jane McKenzie,1996 Summer,Swimming,Women's 100m Backstroke,Gold
+155,Trevor Fitzgerald,1996 Summer,Swimming,Men's 200m Backstroke,Silver
+156,Loretta Brock,1996 Summer,Swimming,Women's 200m Butterfly,Bronze
+157,Isaac Lloyd,1996 Summer,Athletics,Men's 100m,Gold
+158,Mathew Holmes,1996 Summer,Athletics,Men's 200m,Silver
+159,Gertrude Hicks,1996 Summer,Athletics,Women's 100m,Bronze
+160,Jeanette Parks,1996 Summer,Athletics,Women's 200m,Gold
+161,Emmett Ramsey,1996 Summer,Athletics,Men's Long Jump,Silver
+162,Maggie Curtis,1996 Summer,Athletics,Women's Long Jump,Bronze
+163,Dewey Caldwell,1996 Summer,Gymnastics,Men's Floor Exercise,Gold
+164,Virgil Maxwell,1996 Summer,Gymnastics,Men's Vault,Silver
+165,Blanche Santiago,1996 Summer,Gymnastics,Women's Balance Beam,Bronze
+166,Edmund Hammond,1996 Summer,Gymnastics,Men's Parallel Bars,Gold
+167,Fannie Buchanan,1996 Summer,Gymnastics,Women's Floor Exercise,Silver
+168,Percy Castro,1996 Summer,Gymnastics,Women's Uneven Bars,Bronze
+169,Herbert McKenzie,1996 Summer,Basketball,Men's Basketball,Gold
+170,Clifford Bush,1996 Summer,Basketball,Women's Basketball,Silver
+171,Max Lawrence,1996 Summer,Football,Men's Football,Bronze
+172,Lela Daniel,1996 Summer,Football,Women's Football,Gold
+173,Bradford Pierce,1996 Summer,Tennis,Men's Singles,Silver
+174,Nettie Garza,1996 Summer,Tennis,Women's Singles,Bronze
+175,Ramon Hodges,1996 Summer,Tennis,Mixed Doubles,Gold
+176,Wade Webb,1996 Summer,Boxing,Men's Lightweight,Silver
+177,Gordon Underwood,1996 Summer,Boxing,Men's Heavyweight,Bronze
+178,Susie Moody,1996 Summer,Boxing,Women's Flyweight,Gold
+179,Viola Sandoval,1996 Summer,Judo,Women's Lightweight,Silver
+180,Olga Higgins,1996 Summer,Judo,Women's Heavyweight,Bronze
+181,Edmund Black,2016 Summer,Rowing,Men's Single Sculls,Gold
+182,Lois Watts,2016 Summer,Rowing,Women's Single Sculls,Silver
+183,Rodney Hudson,2016 Summer,Cycling,Men's Road Race,Bronze
+184,Dolores Santiago,2016 Summer,Cycling,Women's Road Race,Gold
+185,Eddie Norton,2016 Summer,Archery,Men's Individual,Silver
+186,Stella Luna,2016 Summer,Archery,Women's Individual,Bronze
+187,Morris Duncan,2016 Summer,Weightlifting,Men's 70kg,Gold
+188,Ernestine Newman,2016 Summer,Weightlifting,Women's 60kg,Silver
+189,Felipe Neal,2012 Summer,Rowing,Men's Single Sculls,Bronze
+190,Lydia Tate,2012 Summer,Rowing,Women's Single Sculls,Gold
+191,Randolph Chandler,2012 Summer,Cycling,Men's Road Race,Silver
+192,Lena Sherman,2012 Summer,Cycling,Women's Road Race,Bronze
+193,Malcolm Cross,2012 Summer,Archery,Men's Individual,Gold
+194,Cora Vaughn,2012 Summer,Archery,Women's Individual,Silver
+195,Sidney Reeves,2012 Summer,Weightlifting,Men's 70kg,Bronze
+196,Lucille Barton,2012 Summer,Weightlifting,Women's 60kg,Gold
+197,Robin Powers,2008 Summer,Rowing,Men's Single Sculls,Silver
+198,Janie Dawson,2008 Summer,Rowing,Women's Single Sculls,Bronze
+199,Corey Newman,2008 Summer,Cycling,Men's Road Race,Gold
+200,Irma Stone,2008 Summer,Cycling,Women's Road Race,Silver
+201,Tommy Ball,2008 Summer,Archery,Men's Individual,Bronze
+202,Ora McCarthy,2008 Summer,Archery,Women's Individual,Gold
+203,Erik Steele,2008 Summer,Weightlifting,Men's 70kg,Silver
+204,Harriet Phelps,2008 Summer,Weightlifting,Women's 60kg,Bronze
+205,Edwin Summers,2004 Summer,Rowing,Men's Single Sculls,Gold
+206,Fern Pearson,2004 Summer,Rowing,Women's Single Sculls,Silver
+207,Sherman Jennings,2004 Summer,Cycling,Men's Road Race,Bronze
+208,Nellie Mack,2004 Summer,Cycling,Women's Road Race,Gold
+209,Darrell Stephens,2004 Summer,Archery,Men's Individual,Silver
+210,Della Warner,2004 Summer,Archery,Women's Individual,Bronze
+211,Doug Cannon,2004 Summer,Weightlifting,Men's 70kg,Gold
+212,Edith Bailey,2004 Summer,Weightlifting,Women's 60kg,Silver
+213,Chad Santos,2000 Summer,Rowing,Men's Single Sculls,Bronze
+214,Estella Woods,2000 Summer,Rowing,Women's Single Sculls,Gold
+215,Garland Maxwell,2000 Summer,Cycling,Men's Road Race,Silver
+216,Caroline Rose,2000 Summer,Cycling,Women's Road Race,Bronze
+217,Reuben Owen,2000 Summer,Archery,Men's Individual,Gold
+218,Tillie Lopez,2000 Summer,Archery,Women's Individual,Silver
+219,Santiago Cannon,2000 Summer,Weightlifting,Men's 70kg,Bronze
+220,Kathryn Burns,2000 Summer,Weightlifting,Women's 60kg,Gold
+221,Grover Willis,1996 Summer,Rowing,Men's Single Sculls,Silver
+222,Iris West,1996 Summer,Rowing,Women's Single Sculls,Bronze
+223,Grady Lamb,1996 Summer,Cycling,Men's Road Race,Gold
+224,Lottie Sparks,1996 Summer,Cycling,Women's Road Race,Silver
+225,Guy Franklin,1996 Summer,Archery,Men's Individual,Bronze
+226,Sophia Gilbert,1996 Summer,Archery,Women's Individual,Gold
+227,Cornelius Hammond,1996 Summer,Weightlifting,Men's 70kg,Silver
+228,Aurora Chavez,1996 Summer,Weightlifting,Women's 60kg,Bronze
+229,Caleb Reyes,2020 Summer,Swimming,Men's 100m Freestyle,Gold
+230,Maya Patel,2020 Summer,Swimming,Women's 200m Freestyle,Silver
+231,Ethan Johnson,2020 Summer,Swimming,Men's 400m Freestyle,Bronze
+232,Zoe Williams,2020 Summer,Swimming,Women's 100m Backstroke,Gold
+233,Noah Garcia,2020 Summer,Swimming,Men's 200m Backstroke,Silver
+234,Ava Smith,2020 Summer,Swimming,Women's 200m Butterfly,Bronze
+235,Liam Brown,2020 Summer,Athletics,Men's 100m,Gold
+236,Emma Wilson,2020 Summer,Athletics,Men's 200m,Silver
+237,Oliver Davis,2020 Summer,Athletics,Women's 100m,Bronze
+238,Charlotte Moore,2020 Summer,Athletics,Women's 200m,Gold
+239,Lucas Miller,2020 Summer,Athletics,Men's Long Jump,Silver
+240,Sophia Rodriguez,2020 Summer,Athletics,Women's Long Jump,Bronze
+241,Mason Lopez,2020 Summer,Gymnastics,Men's Floor Exercise,Gold
+242,Isabella Taylor,2020 Summer,Gymnastics,Men's Vault,Silver
+243,Aiden Lee,2020 Summer,Gymnastics,Women's Balance Beam,Bronze
+244,Mia Martinez,2020 Summer,Gymnastics,Men's Parallel Bars,Gold
+245,Elijah Clark,2020 Summer,Gymnastics,Women's Floor Exercise,Silver
+246,Abigail Lewis,2020 Summer,Gymnastics,Women's Uneven Bars,Bronze
+247,Jackson Walker,2020 Summer,Basketball,Men's Basketball,Gold
+248,Amelia Green,2020 Summer,Basketball,Women's Basketball,Silver
+249,Carter Baker,2020 Summer,Football,Men's Football,Bronze
+250,Harper Turner,2020 Summer,Football,Women's Football,Gold
+251,Owen Phillips,2020 Summer,Tennis,Men's Singles,Silver
+252,Evelyn Torres,2020 Summer,Tennis,Women's Singles,Bronze
+253,Sebastian Evans,2020 Summer,Tennis,Mixed Doubles,Gold
+254,Aria Collins,2020 Summer,Boxing,Men's Lightweight,Silver
+255,Leo Murphy,2020 Summer,Boxing,Men's Heavyweight,Bronze
+256,Lily Nelson,2020 Summer,Boxing,Women's Flyweight,Gold
+257,Grayson King,2020 Summer,Judo,Women's Lightweight,Silver
+258,Scarlett Hill,2020 Summer,Judo,Women's Heavyweight,Bronze
+259,Wyatt Scott,2020 Summer,Rowing,Men's Single Sculls,Gold
+260,Chloe Nguyen,2020 Summer,Rowing,Women's Single Sculls,Silver
+261,Julian Hayes,2020 Summer,Cycling,Men's Road Race,Bronze
+262,Layla Foster,2020 Summer,Cycling,Women's Road Race,Gold
+263,Gabriel Ross,2020 Summer,Archery,Men's Individual,Silver
+264,Audrey Stewart,2020 Summer,Archery,Women's Individual,Bronze
+265,Daniel Reed,2020 Summer,Weightlifting,Men's 70kg,Gold
+266,Penelope Morgan,2020 Summer,Weightlifting,Women's 60kg,Silver
+267,Joseph Price,2020 Summer,Table Tennis,Men's Singles,Bronze
+268,Madelyn Bennett,2020 Summer,Table Tennis,Women's Singles,Gold
+269,Matthew Diaz,2020 Summer,Skateboarding,Men's Street,Silver
+270,Victoria Rivera,2020 Summer,Skateboarding,Women's Street,Bronze
+271,Samuel Cooper,2020 Summer,Surfing,Men's Shortboard,Gold
+272,Rylee Rogers,2020 Summer,Surfing,Women's Shortboard,Silver
+273,David Peterson,2020 Summer,Sport Climbing,Men's Combined,Bronze
+274,Grace Brooks,2020 Summer,Sport Climbing,Women's Combined,Gold
+275,Benjamin Wood,2020 Summer,Karate,Men's Kumite,Silver
+276,Brooklyn Powell,2020 Summer,Karate,Women's Kumite,Bronze 

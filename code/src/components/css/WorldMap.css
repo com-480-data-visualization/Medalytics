@@ -1,0 +1,603 @@
+/* src/components/css/WorldMap.css */
+.world-map-container {
+    font-family: 'SF Pro', 'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: var(--bg-primary);
+    border-radius: 2em;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    padding: 35px;
+    max-width: 1800px;
+    min-height: 800px;
+    width: 100%;
+    margin: 40px auto 40px;
+    position: relative;
+    transition: background-color 0.3s ease, color 0.3s ease, max-width 0.4s ease;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .world-map-container.with-side-window {
+    overflow-x: hidden;
+    max-width: 2200px;
+    min-height: 800px;
+  }
+  
+  .map-wrapper {
+    display: flex;
+    width: 100%;
+    height: 700px;
+    margin-bottom: 20px;
+    position: relative;
+    transition: width 0.4s ease;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+  
+  .map-title {
+    color: var(--gold);
+    font-size: 24px !important;
+    font-weight: 600 !important;
+    font-family: 'SF Pro', 'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif !important;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  .map-controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .map-button {
+    padding: 10px 15px;
+    background-color: var(--bg-primary);
+    border: 1px solid var(--light-gray);
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.2s ease;
+    color: var(--text-primary);
+  }
+  
+  .map-button:hover {
+    background-color: var(--light-gray);
+    color: var(--text-primary);
+  }
+  
+  .map-button.active {
+    background-color: var(--gold);
+    color: var(--bg-primary);
+    border-color: var(--silver);
+  }
+  
+  .map-container {
+    position: relative;
+    flex-grow: 1;
+    height: 700px;
+    overflow: hidden;
+    background-color: var(--bg-primary);
+    border-radius: 8px;
+    border: 1px solid var(--light-gray);
+    transition: width 0.4s ease, background-color 0.3s ease;
+  }
+  
+  .map-container.map-shifted {
+  }
+  
+  .map-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    color: var(--text-primary);
+  }
+  
+  .country {
+    transition: fill 0.2s ease;
+    cursor: pointer;
+  }
+  
+  .country:hover {
+    fill: var(--silver);
+  }
+  
+  .country.selected {
+    fill: var(--gold);
+  }
+  
+  .map-tooltip {
+    position: absolute;
+    padding: 10px;
+    background-color: var(--bg-primary);
+    border: 1px solid var(--light-gray);
+    border-radius: 6px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+    pointer-events: none;
+    z-index: 1000;
+    font-size: 14px;
+    color: var(--text-primary);
+    transition: opacity 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .map-legend {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .legend-item {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: var(--text-primary);
+  }
+  
+  .legend-color {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    border-radius: 4px;
+  }
+  
+  .map-info-panel {
+    background-color: var(--bg-primary);
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    border: 1px solid var(--light-gray);
+    transition: background-color 0.3s ease;
+  }
+  
+  .map-info-panel h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: var(--gold);
+    font-weight: 600;
+  }
+  
+  .map-info-panel p {
+    margin-bottom: 8px;
+    line-height: 1.5;
+    color: var(--text-primary);
+  }
+  
+  .map-data-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  
+  .data-item {
+    background-color: var(--bg-primary);
+    border-radius: 6px;
+    padding: 10px 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    flex: 1;
+    min-width: 150px;
+    border: 1px solid var(--light-gray);
+    transition: background-color 0.3s ease;
+  }
+  
+  .data-item h4 {
+    margin: 0 0 5px 0;
+    font-size: 14px;
+    color: var(--text-primary);
+  }
+  
+  .data-value {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--bronze);
+  }
+  
+  .loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    color: var(--text-primary);
+  }
+  
+  .loading-spinner {
+    width: 40px;
+    height: 40px;
+    border: 3px solid rgba(46, 46, 46, 0.1);
+    border-radius: 50%;
+    border-top-color: var(--gold);
+    animation: spin 1s ease-in-out infinite;
+    margin-bottom: 15px;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .error-container {
+    background-color: var(--bg-primary);
+    border-left: 4px solid var(--bronze);
+    padding: 20px;
+    color: var(--text-primary);
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .map-zoom-controls {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .zoom-button {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-primary);
+    border: 1px solid var(--light-gray);
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    color: var(--text-primary);
+  }
+  
+  .zoom-button:hover {
+    background-color: var(--light-gray);
+    color: var(--text-primary);
+  }
+  
+  /* Side Window Styles */
+  .country-side-window {
+    width: 0;
+    flex-shrink: 0;
+    background-color: var(--bg-primary);
+    border: 1px solid transparent;
+    border-radius: 8px;
+    box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 15px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transform: translateX(100%);
+    transition: transform 0.4s ease, opacity 0.4s ease, visibility 0.4s, width 0.4s ease, padding 0.4s ease, border-color 0.4s ease;
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .country-side-window.open {
+    transform: translateX(0);
+    width: 400px;
+    height: 700px;
+    padding: 25px 25px 15px 25px;
+    border-color: var(--light-gray);
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .side-window-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--light-gray);
+    position: relative;
+  }
+
+  .side-window-header h3 {
+    font-size: 20px;
+    margin: 0;
+    margin-top: -10px;
+    color: var(--gold);
+    font-weight: 600;
+    padding-right: 40px;
+  }
+
+  .close-button {
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: var(--text-primary);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+    position: absolute;
+    top: -15px;
+    right: 0px;
+    z-index: 1010;
+    /* Try these additional properties */
+    text-align: center;
+    padding: 0;
+    line-height: 1;
+  }
+  
+  /* For better X centering */
+  .close-button span,
+  .close-button i,
+  .close-button svg {
+    display: flex;  /* Changed from block to flex */
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    line-height: 0;
+    text-align: center;
+  }
+  
+  /* If you're using a text character for the X */
+  .close-button::before {
+    content: "×";  /* Unicode multiplication sign - more centered than "x" */
+    display: block;
+    line-height: 0;
+    text-align: center;
+    position: relative;
+    top: -1px; /* Fine-tune vertical position */
+  }
+  
+  .close-button:hover {
+    background-color: var(--light-gray);
+    color: var(--gold);
+  }
+  
+  .close-button:focus {
+    outline: 2px solid var(--gold);
+    outline-offset: 2px;
+  }
+
+  .side-window-controls {
+    margin-bottom: 25px;
+  }
+
+  .side-window-controls label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: var(--text-primary);
+  }
+
+  .year-select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: -15px;
+    border: 1px solid var(--light-gray);
+    border-radius: 6px;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.2s ease, background-color 0.3s ease, color 0.3s ease;
+    
+    /* Remove the 3D effect */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    
+    /* Add custom arrow with the same color as the border */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23AAAAAA' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    background-size: 12px;
+    padding-right: 40px; /* Make room for the arrow */
+  }
+  
+  .year-select:focus {
+    border-color: var(--gold);
+  }
+
+  .medal-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 10px;
+  }
+
+  /* Add this new rule to center the bronze medal box */
+.medal-stat-item.bronze {
+  grid-column: span 2; /* Make it span both columns */
+  max-width: 400px; /* Set a maximum width */
+  margin: 0 auto; /* Center it horizontally */
+}
+
+/* Center the athletes box */
+.medal-stat-item.athletes {
+  grid-column: span 2; /* Make it span both columns */
+  max-width: 400px; /* Set a maximum width to match other boxes */
+  margin: 0 auto; /* Center it horizontally */
+}
+
+/* Keep the total spanning both columns */
+.medal-stat-item.total {
+  grid-column: span 2;
+}
+
+  .medal-stat-item {
+    border-radius: 8px;
+    padding: 20px;
+    background-color: var(--bg-primary);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.3s ease;
+    border: 1px solid var(--light-gray);
+  }
+
+  .medal-stat-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+
+  .medal-stat-item h4 {
+    margin: 0 0 10px 0;
+    font-size: 14px;
+    color: var(--text-primary);
+    text-align: center;
+  }
+
+  .medal-value {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .gold .medal-value {
+    color: var(--gold);
+  }
+
+  .silver .medal-value {
+    color: var(--silver);
+  }
+
+  .bronze .medal-value {
+    color: var(--bronze);
+  }
+
+  .total .medal-value {
+    background: linear-gradient(90deg, var(--gold), var(--silver), var(--bronze));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .athletes .medal-value {
+    color: var(--text-primary);
+  }
+
+  .medal-stat-item.total {
+    grid-column: span 2;
+  }
+
+  .no-data-message {
+    grid-column: span 2;
+    padding: 20px;
+    text-align: center;
+    border: 1px dashed var(--light-gray);
+    border-radius: 8px;
+    color: var(--text-primary);
+    font-style: italic;
+  }
+  
+  /* Responsive adjustments */
+  /* Tablet View */
+  @media (max-width: 992px) and (min-width: 769px) {
+    .world-map-container.with-side-window {
+      max-width: 2000px;
+    }
+    
+    .map-container.map-shifted {
+      transform: translateX(-180px);
+      width: calc(100% - 150px);
+    }
+
+    .country-side-window {
+      width: 320px;
+      max-height: 550px;
+    }
+    
+    .country-side-window.open {
+      right: 15px;
+    }
+    
+    .medal-value {
+      font-size: 32px;
+    }
+  }
+  
+  /* Mobile View */
+  @media (max-width: 768px) {
+    .world-map-container {
+      margin-bottom: 120px;
+      padding: 20px;
+      max-width: 100%;
+    }
+
+    .map-wrapper {
+      flex-direction: column;
+      overflow: visible;
+    }
+    
+    .map-container {
+      height: 450px;
+      transition: margin-bottom 0.4s ease, transform 0.4s ease, background-color 0.3s ease;
+    }
+    
+    .map-container.map-shifted {
+      transform: translateY(0);
+      margin-bottom: 0;
+      width: 100%;
+    }
+    
+    .map-data-details {
+      flex-direction: column;
+    }
+
+    .country-side-window {
+      width: 100%;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      transform: translateY(0);
+      height: 600px;
+      max-height: 600px;
+      border-top: 1px solid var(--light-gray);
+      border-left: none;
+      border-radius: 0;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      transition: top 0.4s ease, background-color 0.3s ease;
+      padding: 20px;
+    }
+    
+    .country-side-window.open {
+      top: calc(100% - 500px);
+      right: 0;
+    }
+
+    .medal-stats {
+      grid-template-columns: 1fr;
+      gap: 15px;
+    }
+
+    .medal-stat-item.total {
+      grid-column: 1;
+    }
+    
+    .medal-value {
+      font-size: 30px;
+    }
+
+    .map-controls {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+     
+    .map-button {
+      width: 100%;
+      max-width: 250px;
+    }
+  }
