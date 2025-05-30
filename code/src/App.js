@@ -7,7 +7,6 @@ import PageIndicator from './components/PageIndicator';
 import ThemeToggle from './components/ThemeToggle';
 import AnimatedBackground from './components/AnimatedBackground';
 import { initStrictScrolling } from './utils/strictScrollController';
-import AthletesPerCountryChart from './components/AthletesPerCountryChart';
 import GenderEvolutionChart from './components/GenderEvolutionChart';
 import D3WorldMap from './components/D3WorldMap';
 import OlympicSportsTreemap from './components/OlympicSportsTreemap';
@@ -153,14 +152,6 @@ function App() {
       </div>
 
 
-
-      <div className="snap-section" id="dataSection1">
-        <div className="container">
-          <div className="content">
-            <AthletesPerCountryChart />
-          </div>
-        </div>
-      </div>
 
       {/* Credits Page - Final section */}
       <div className="snap-section" id="creditsSection">
