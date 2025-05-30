@@ -1,8 +1,19 @@
+<table>
+  <tr>
+    <td>
+
 | Student's name | SCIPER |
 | -------------- | ------ |
-| Hugo Jeannin | 329220 |
-| Albert Fares | 341018 |
-| Daniel Polka | 326800 |
+| Hugo Jeannin   | 329220 |
+| Albert Fares   | 341018 |
+| Daniel Polka   | 326800 |
+
+  </td>
+  <td style="vertical-align: top; padding-left: 40px;">
+    <img src="res/logo-medalytics.png" alt="Medalytics Logo" width="140">
+  </td>
+  </tr>
+</table>
 
 # COM-480 - Data Visualization
 
@@ -11,7 +22,6 @@
 
 <div style="display: flex; align-items: center; gap: 40px;">
   <img src="res/logo-epfl.png" alt="EPFL Logo" width="200">
-  <img src="res/logo-medalytics.png" alt="Medalytics Logo" width="200">
 </div>
 
 ---
