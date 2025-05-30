@@ -40,6 +40,7 @@
 ## 🔗 [www.medalytics.ch](https://www.medalytics.ch)
 
 *(If the main domain is unavailable, use the backup: [medalytics.netlify.app](https://medalytics.netlify.app/))*
+> 🧭 **Note:** For the best experience, we recommend viewing the website on **Safari**.
 
 ---
 
@@ -52,10 +53,10 @@
   The [`README.md`](./code/README.md) file inside the `code/` folder contains detailed information on how the website works, including setup instructions and explanations of its features.
 
 - **📘 Process Book:**  
-  You can find the process book in the root directory under the filename [`ProcessBook.pdf`](./ProcessBook.pdf). It outlines our design decisions, implementation strategy, and development timeline.
+  You can find the process book in the root directory under the filename [`ProcessBook.pdf`](./ProcessBook.pdf). It outlines our design decisions and implementation strategy.
 
 - **🎥 Showcase Video:**  
-  A video walkthrough of the project is available here:  
+  A video walkthrough of the website is available here:  
   🔗 [Watch the video](https://drive.google.com/file/d/10hwmtNfnMW0wh7iY8uL6XLEjl9VptjU6/view?usp=share_link)
 
 ---
